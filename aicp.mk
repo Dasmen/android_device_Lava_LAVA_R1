@@ -4,7 +4,7 @@
 PRODUCT_RELEASE_NAME := LAVA_R1
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/Lava/LAVA_R1/device_LAVA_R1.mk)
@@ -14,7 +14,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := LAVA_R1
-PRODUCT_NAME := lineage_LAVA_R1
+PRODUCT_NAME := aicp_LAVA_R1
 PRODUCT_BRAND := Lava
 PRODUCT_MODEL := LAVA_R1
 PRODUCT_MANUFACTURER := Lava

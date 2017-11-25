@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_LAVA_R1.mk
+    $(LOCAL_DIR)/aicp.mk
