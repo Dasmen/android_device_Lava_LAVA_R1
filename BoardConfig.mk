@@ -25,6 +25,13 @@ include $(LOCAL_PATH)/board/*.mk
 
 #######################################################################
 
+TARGET_KMODULES := true
+
+TARGET_PREBUILT_KERNEL := device/Lava/LAVA_R1/kernel
+#BOARD_CUSTOM_BOOTIMG_MK := device/Lava/LAVA_R1/bootimg.mk
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --tags_offset 0x0df88000 --board 1486443621
+BOARD_CUSTOM_BOOTIMG := true
+
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
