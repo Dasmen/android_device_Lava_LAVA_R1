@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device_LAVA_R1.mk)
@@ -29,7 +29,7 @@ PRODUCT_BRAND := Lava
 PRODUCT_DEVICE := LAVA_R1
 PRODUCT_MANUFACTURER := Lava
 PRODUCT_MODEL := LAVA_R1
-PRODUCT_NAME := lineage_LAVA_R1
+PRODUCT_NAME := bliss_LAVA_R1
 PRODUCT_RELEASE_NAME := LAVA_R1
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
