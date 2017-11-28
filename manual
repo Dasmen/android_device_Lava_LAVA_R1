@@ -17,10 +17,10 @@ cd working_dir
 
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"
 
-./device/coolpad/CP8676_I02/patches/install.sh
+./device/Lava/LAVA_R1/patches/install.sh
 
 . build/envsetup.sh
 
-lunch lineage_CP8676_I02-userdebug && make bacon -j8
+lunch lineage_LAVA_R1-userdebug && make bacon -j8
 
 Wait for the build to finish, for me ~5hr

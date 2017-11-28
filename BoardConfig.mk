@@ -15,19 +15,15 @@
 #
 
 # Device path
-LOCAL_PATH := device/coolpad/CP8676_I02
+LOCAL_PATH := device/Lava/LAVA_R1
 
 # Device board elements
 include $(LOCAL_PATH)/board/*.mk
 
 # Device vendor board
--include vendor/coolpad/CP8676_I02/BoardConfigVendor.mk
+-include vendor/Lava/LAVA_R1/BoardConfigVendor.mk
 
 #######################################################################
-
-# Kernel
-TARGET_KMODULES := true
-BOARD_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true

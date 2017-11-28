@@ -1,4 +1,4 @@
-# Coolpad Note 3 - LineageOS 14.1 / AOSP 7.1.1
+# Lava LAVA_R1 - LineageOS 14.1 / AOSP 7.1.1
 ==============
 
 This branch is device for building of the LineageOS 14.1 and Android Nougat 7.1.1 AOSP ROMs. For more information about building the ROM, read our [build manual](manual).
@@ -7,21 +7,21 @@ This branch is device for building of the LineageOS 14.1 and Android Nougat 7.1.
 
 # About Device
 
-Coolpad Note 3(CP8676_I02)
-![Coolpad Note 3](http://drop.ndtv.com/TECH/product_database/images/109201512321PM_635_coolpad_note_3.jpeg "Coolpad Note 3")
+Lava LAVA_R1(LAVA_R1)
+![LAVA_R1](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNwMPg2b0782CoonN_3hANPvSrxjapPQl5KIdE7B3CTd6F8jc7y1OgA2TA)
 
 ### Specifications
 
 Component Type | Details
 -------:|:-------------------------
-CPU     | 1.3GHz Octa-Core MT6753
+CPU     | 1.3GHz Octa-Core MT6737M
 GPU     | Mali-T720
-Memory  | 3GB RAM
-Shipped Android Version | 5.1.1
+Memory  | 2GB RAM
+Shipped Android Version | 6.0.1
 Storage | 16GB
-Battery | 3000 mAh
-Display | 5.5" 1080 x 720 px DPI 320
-Rear Camera | 13MP, Int.13MP 
+Battery | 2650 mAh
+Display | 5.0" 1080 x 720 px DPI 320
+Rear Camera | 8MP, Int.8MP 
 Front Camera | 5MP, Int. 5MP
 
 ---
@@ -79,4 +79,5 @@ Front Camera | 5MP, Int. 5MP
  * ganeshi4u
  * sam_Grande
  * kuber_Sharma
+ * K3NG2541
  

@@ -1,14 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "mohancm100/android_vendor_coolpad_CP8676_I02",
-    "target_path": "vendor/coolpad/CP8676_I02",
-    "branch": "LineageOS-14.1"
-  },
-  {
-    "remote": "github",
-    "repository": "mohancm100/android_kernel_coolpad_CP8676_I02",
-    "target_path": "kernel/coolpad/CP8676_I02",
-    "branch": "LineageOS-14.1"
+    "repository": "K3NG2541/android_vendor_Lava_LAVA_R1",
+    "target_path": "vendor/Lava/LAVA_R1",
+    "branch": "lineage-14.1"
   }
 ] 

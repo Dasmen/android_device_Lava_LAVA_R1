@@ -30,8 +30,8 @@ persist.af.audio_patch_fm=1
 
 ro.zygote.preload.enable=0
 
-# Disable Navigation Bar
-qemu.hw.mainkeys=1
+# Enable Navigation Bar
+qemu.hw.mainkeys=0
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
@@ -74,8 +74,8 @@ ro.mtk_gps_support=1
 persist.md.perm.checked=1
 
 ro.mediatek.chip_ver=S01
-ro.mediatek.version.release=alps-mp-m0.mp1-V2.39.1_wtk6753.65u.m0_P16
-ro.mediatek.platform=MT6735
+ro.mediatek.version.release=alps-mp-m0.mp1-V2.84_lava6737m.65.m0_P5
+ro.mediatek.platform=MT6737M
 bgw.current3gband=0
 ro.sf.hwrotation=0
 persist.mtk.wcn.combo.chipid=-1

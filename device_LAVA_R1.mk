@@ -39,7 +39,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Vendor product configurations
-$(call inherit-product-if-exists, vendor/coolpad/CP8676_I02/CP8676_I02-vendor.mk)
+$(call inherit-product-if-exists, vendor/Lava/LAVA_R1/LAVA_R1-vendor.mk)
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.secure=0 \

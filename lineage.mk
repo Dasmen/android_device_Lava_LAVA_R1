@@ -18,17 +18,20 @@
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/device_CP8676_I02.mk)
+$(call inherit-product, $(LOCAL_PATH)/device_LAVA_R1.mk)
 
 # Device display
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Device identifier
-PRODUCT_BRAND := coolpad
-PRODUCT_DEVICE := CP8676_I02
-PRODUCT_MANUFACTURER := COOLPAD
-PRODUCT_MODEL := Coolpad Note 3
-PRODUCT_NAME := lineage_CP8676_I02
-PRODUCT_RELEASE_NAME := CP8676_I02
+PRODUCT_BRAND := Lava
+PRODUCT_DEVICE := LAVA_R1
+PRODUCT_MANUFACTURER := Lava
+PRODUCT_MODEL := LAVA_R1
+PRODUCT_NAME := lineage_LAVA_R1
+PRODUCT_RELEASE_NAME := LAVA_R1
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+# Available languages
+PRODUCT_LOCALES := en_US en_GB ru_RU uk_UA tr_TR sk_SK vi_VN fr_FR ar_EG th_TH
