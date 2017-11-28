@@ -21,7 +21,7 @@ LOCAL_PATH := device/Lava/LAVA_R1
 include $(LOCAL_PATH)/board/*.mk
 
 # Device vendor board
--include vendor/Lava/LAVA_R1/BoardConfigVendor.mk
+-include vendor/Lava/LAVA_R1/Android.mk
 
 #######################################################################
 
