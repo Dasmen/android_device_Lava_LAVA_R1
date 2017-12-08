@@ -9,7 +9,7 @@ $(call inherit-product, device/Lava/LAVA_R1/device_LAVA_R1.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := LAVA_R1
-PRODUCT_NAME := cm_LAVA_R1
+PRODUCT_NAME := lineage_LAVA_R1
 PRODUCT_BRAND := Lava
 PRODUCT_MODEL := LAVA_R1
 PRODUCT_MANUFACTURER := Lava
