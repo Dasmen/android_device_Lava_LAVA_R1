@@ -21,4 +21,4 @@ include $(CLEAR_VARS)
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
 # include the non-open-source counterpart to this file
--include vendor/Infinix/X601_LTE/AndroidBoardVendor.mk
+-include vendor/Lava/LAVA_R1/AndroidBoardVendor.mk

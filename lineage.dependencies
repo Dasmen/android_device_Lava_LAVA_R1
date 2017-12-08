@@ -1,8 +1,8 @@
  [
   {
     "remote": "github",
-    "repository": "nasreirma/android_vendor_Infinix_X601_LTE",
-    "target_path": "vendor/Infinix/X601_LTE",
+    "repository": "K3NG2541/android_vendor_Lava_LAVA_R1",
+    "target_path": "vendor/Lava/LAVA_R1",
     "branch": "LineageOS-14.1"
   }
 ] 

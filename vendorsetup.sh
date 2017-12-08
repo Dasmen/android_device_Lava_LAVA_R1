@@ -1,4 +1,4 @@
-add_lunch_combo lineage_X601_LTE-eng
-add_lunch_combo lineage_X601_LTE-userdebug
-add_lunch_combo lineage_X601_LTE-user
+add_lunch_combo lineage_LAVA_R1-eng
+add_lunch_combo lineage_LAVA_R1-userdebug
+add_lunch_combo lineage_LAVA_R1-user
 

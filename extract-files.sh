@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DEVICE=X601_LTE
-export VENDOR=Infinix
+export DEVICE=LAVA_R1
+export VENDOR=Lava
 
 if [ $# -eq 0 ]; then
   SRC=adb

@@ -19,6 +19,6 @@
 
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
-#define BTM_DEF_LOCAL_NAME   "Infinix NOTE 3 Pro"
+#define BTM_DEF_LOCAL_NAME   "Lava LAVA R1"
 
 #endif

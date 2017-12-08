@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/Infinix/X601_LTE
+LOCAL_PATH := device/Lava/LAVA_R1
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -26,8 +26,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # default.prop
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -39,7 +39,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.sys.usb.config=mtp \
     ro.mount.fs=EXT4 \
     camera.disable_zsl_mode=1 \
-    persist.sys.display.clearMotion=0 
+    persist.sys.display.clearMotion=0
 
 # build.prop
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -217,11 +217,11 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.mt6753
+    power.mt6737m
 
 # liblights
 PRODUCT_PACKAGES += \
-    lights.mt6753
+    lights.mt6737m
 
 # sensors
 PRODUCT_PACKAGES += \
@@ -229,11 +229,11 @@ PRODUCT_PACKAGES += \
 
 # memtrack
 PRODUCT_PACKAGES += \
-    memtrack.mt6753
+    memtrack.mt6737m
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.mt6753 \
+    gps.mt6737m \
     libepos \
     mnld \
     libmnl \
@@ -249,7 +249,7 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    radio.fm.mt6753 \
+    radio.fm.mt6737m \
     FMRadio \
     libfmjni \
     libfmcust

@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/Infinix/X601_LTE
+LOCAL_PATH := device/Lava/LAVA_R1
 
 # Inherit some common Lineage OS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -25,13 +25,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-$(call inherit-product-if-exists, vendor/Infinix/X601_LTE/X601_LTE-vendor.mk)
+$(call inherit-product-if-exists, vendor/Lava/LAVA_R1/LAVA_R1-vendor.mk)
 
 # Device branding
-PRODUCT_DEVICE := X601_LTE
-PRODUCT_NAME := lineage_X601_LTE
-PRODUCT_BRAND := Infinix
-PRODUCT_MANUFACTURER := Infinix
-PRODUCT_MODEL := Infinix NOTE 3 Pro
+PRODUCT_DEVICE := LAVA_R1
+PRODUCT_NAME := lineage_LAVA_R1
+PRODUCT_BRAND := Lava
+PRODUCT_MANUFACTURER := Lava
+PRODUCT_MODEL := LAVA_R1
 
 PRODUCT_GMS_CLIENTID_BASE := android-google

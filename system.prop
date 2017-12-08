@@ -42,7 +42,7 @@ ro.mtk_wappush_support=1
 
 # WIFI
 wifi.interface=wlan0
-ro.hardware=mt6735
+ro.hardware=mt6737m
 mediatek.wlan.chip=CONSYS_MT6735
 mediatek.wlan.module.postfix=_consys_mt6735
 ro.mediatek.wlan.wsc=1
@@ -78,7 +78,7 @@ ro.zygote.preload.enable=0
 ro.kernel.zio=38,108,105,16
 
 # Display
-ro.sf.lcd_density=480
+ro.sf.lcd_density=320
 qemu.hw.mainkeys=0
 ro.opengles.version=196609
 persist.sys.force_highendgfx=true
