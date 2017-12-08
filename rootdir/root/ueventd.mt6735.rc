@@ -72,7 +72,6 @@
 /dev/ccci_aud             0660   audio      audio
 /dev/ccci2_aud            0660   audio      audio
 /dev/eemcs_aud            0660   audio      audio
-/dev/tfa9897		  	  0660	 media	    media
 /dev/irtx                 0660   system     system
 /dev/ir-learning          0660   system     system
 

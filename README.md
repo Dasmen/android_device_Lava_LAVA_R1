@@ -1,7 +1,7 @@
-Device Tree for Lava LAVA_R1
+Device Tree for Lava R1
 ===========================================
 
-The Lenovo P1m (codenamed _"LAVA_R1"_) is a mid-range smartphone from Lava.
+The Lava R1 (codenamed _"LAVA_R1"_) is a mid-range smartphone from Lava.
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -17,4 +17,4 @@ Display | 720 x 1280 pixels, 5.0 inches
 Camera  | Main 8MP / Front 5MP, autofocus, LED flash
 
 Copyright 2017 - The LineageOS Project.
-Thanks to igor1144, olegsvs, Decker, danielhk, mdeejay, Zormax, SRT.
+Thanks to igor1144, olegsvs, Decker, danielhk, mdeejay, Zormax, STR.

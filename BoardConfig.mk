@@ -1,9 +1,7 @@
+USE_CAMERA_STUB := true
+
 # inherit from the proprietary version
 -include vendor/Lava/LAVA_R1/BoardConfigVendor.mk
-
-
-# Disable NINJA
-USE_NINJA := false
 
 # GPS
 TARGET_SPECIFIC_HEADER_PATH := device/Lava/LAVA_R1/include
@@ -11,6 +9,8 @@ TARGET_SPECIFIC_HEADER_PATH := device/Lava/LAVA_R1/include
 # Platform
 TARGET_BOARD_PLATFORM := mt6737m
 TARGET_NO_BOOTLOADER := true
+
+#FORCE_32_BIT = true
 
 # Architecture
 ifeq ($(FORCE_32_BIT),true)
@@ -32,19 +32,8 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
-TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
-TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
-TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
-endif
-
-# Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := mt6737m
 
-# Recovery
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
-
-# Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -59,45 +48,34 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_PREBUILT_KERNEL := device/Lava/LAVA_R1/kernel
 #BOARD_CUSTOM_BOOTIMG_MK := device/Lava/LAVA_R1/bootimg.mk
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --tags_offset 0x0df88000 --board 1486443621
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --tags_offset 0x0df88000 --board 1472186745
 BOARD_CUSTOM_BOOTIMG := true
 
 TARGET_KMODULES := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := LAVA_R1,LAVA_R1_Lava,Lava_LAVA_R1
+TARGET_OTA_ASSERT_DEVICE := Lava,LAVA_R1,LAVA_R1_Lava,Lava_LAVA_R1
+
+#COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
-# Graphics
+# EGL
 BOARD_EGL_CFG := device/Lava/LAVA_R1/configs/egl.cfg
-BOARD_EGL_WORKAROUND_BUG_10194508 := true
 USE_OPENGL_RENDERER := true
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
-TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
-MTK_HWC_SUPPORT := yes
-MTK_HWC_VERSION := 1.4.1
-MTK_GPU_VERSION := mali midgard r7p0
+BOARD_EGL_WORKAROUND_BUG_10194508 := true
+TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 
 # MTK Hardware
 BOARD_HAS_MTK_HARDWARE := true
-BOARD_USES_MTK_HARDWARE := true
 MTK_HARDWARE := true
 #COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 #COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS := device/Lava/LAVA_R1/cmhw
-
-# Fix video autoscaling on old OMX decoders
-TARGET_OMX_LEGACY_RESCALING := true
-TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
-
-# Charger
-BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+# Offline charging
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/Lava/LAVA_R1/ril/
@@ -154,4 +132,9 @@ BOARD_SEPOLICY_DIRS := \
 # Use old sepolicy version
 POLICYVERS := 29
 
+# [+] Decker
+BLOCK_BASED_OTA := false
 TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so # for symbols in mtkaudio.cpp + mtksymbols
+
+#BOARD_USES_LEGACY_MTK_AV_BLOB := true
+#TARGET_HAS_LEGACY_CAMERA_HAL1 := true

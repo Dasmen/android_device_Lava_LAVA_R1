@@ -15,8 +15,6 @@ type als_ps_device, dev_type;
 type mtk-adc-cali_device, dev_type;
 type gsensor_device, dev_type;
 type msensor_device, dev_type;
-type mcube_device, dev_type;
-type gyroscope_device, dev_type;
 
 # Media
 type accdet_device, dev_type;
@@ -32,3 +30,6 @@ type protect1_device, dev_type;
 type protect2_device, dev_type;
 type mmc_device, dev_type;
 type mtkbt_device, dev_type;
+
+# Fingerprint
+type sunwave_device, dev_type;

@@ -1,4 +1,4 @@
-	#!/bin/bash
+#!/bin/bash
 
 # Example of usage: copy-files.sh /home/decker/hdd/superrs-kitchen/superr_Doogee_x5_Max_Pro/system
 

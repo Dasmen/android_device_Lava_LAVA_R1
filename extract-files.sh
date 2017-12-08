@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DEVICE=P1m
-export VENDOR=lenovo
+export DEVICE=LAVA_R1
+export VENDOR=Lava
 
 if [ $# -eq 0 ]; then
   SRC=adb
